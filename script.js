@@ -17,5 +17,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Scroll Progress Bar
+    const progressBar = document.getElementById('progress-bar');
+
+    function updateProgressBar() {
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight - windowHeight;
+        const scrolled = window.scrollY;
+        const progress = (scrolled / documentHeight) * 100;
+        progressBar.style.width = `${progress}%`;
+    }
+
+    window.addEventListener('scroll', updateProgressBar);
+    window.addEventListener('resize', updateProgressBar);
 
 });

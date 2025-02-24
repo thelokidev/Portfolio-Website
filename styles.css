@@ -354,8 +354,6 @@ body {
     background-color: rgba(100, 181, 246, 0.1);
 }
 
-
-
 /* Footer */
 .footer {
     background-color: #111827;
@@ -492,4 +490,15 @@ section h2 {
 .footer {
     background-color: #111827;
     color: var(--text-color);
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(to right, #4a90e2, #67b26f);
+    z-index: 9999;
+    transition: width 0.2s ease-out;
 }
