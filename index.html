@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lokesh Adhepalli Prasad - Software Engineer & Big Data Specialist with expertise in data pipelines, cloud infrastructure, and innovative solutions.">
+    <meta name="keywords" content="Software Engineer, Big Data, Data Engineer, Cloud Infrastructure, Python, Java, AWS, Hadoop">
+    <meta name="author" content="Lokesh Adhepalli Prasad">
+    <meta property="og:title" content="Lokesh Adhepalli Prasad - Software Engineer">
+    <meta property="og:description" content="Software Engineer & Big Data Specialist building scalable solutions for complex data challenges">
+    <meta property="og:image" content="assets/logos/me.jpg">
+    <meta property="og:url" content="https://thelokidev.github.io/Portfolio-Website/">
     <title>Lokesh Adhepalli Prasad - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -22,6 +29,11 @@
     <header class="header">
         <nav class="nav-container">
             <div class="logo">LAP</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -53,8 +65,32 @@
         <section id="about" class="about-section">
             <h2>About Me</h2>
             <div class="about-content">
-                <div class="profile-container">
-                    <img src="assets/logos/me.jpg" alt="Lokesh Adhepalli Prasad">
+                <div class="profile-section">
+                    <div class="profile-container">
+                        <img src="assets/logos/me.jpg" alt="Lokesh Adhepalli Prasad">
+                    </div>
+                    <div class="education-logos">
+                        <div class="university-logo">
+                            <div class="uni-header">
+                                <img src="assets/logos/unt-logo.jpg" alt="UNT">
+                                <div class="uni-info">
+                                    <span class="uni-name">University of North Texas</span>
+                                    <span class="uni-degree">M.S. in Information Systems and Technology</span>
+                                    <span class="uni-year">2023 - 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="university-logo">
+                            <div class="uni-header">
+                                <img src="assets/logos/anna-logo.jpg" alt="Anna University">
+                                <div class="uni-info">
+                                    <span class="uni-name">Anna University</span>
+                                    <span class="uni-degree">B.E. in Electrical and Electronics Engineering</span>
+                                    <span class="uni-year">2016 - 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-text">
                     <p>Master of Science student in Information Systems and Technology at the University of North Texas, with extensive experience in Big Data technologies and software engineering. Specialized in developing and maintaining data pipelines, cloud infrastructure, and implementing innovative solutions for complex data challenges.</p>
@@ -82,12 +118,14 @@
         <section id="experience" class="experience-section">
             <h2>Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
+                        <div class="timeline-date">January 2022 - August 2023</div>
                         <h3>Associate Software Engineer</h3>
-                        <h4>COGNIZANT Technology Solutions - Chennai, India</h4>
-                        <p class="date">January 2022 - August 2023</p>
-                        <ul>
+                        <h4>COGNIZANT Technology Solutions</h4>
+                        <div class="timeline-location">Chennai, India</div>
+                        <ul class="timeline-details">
                             <li>Enhanced and monitored non-production streaming servers using Ambari UI</li>
                             <li>Designed and developed Big Data applications with Jenkins integration</li>
                             <li>Led migration from HDP to Cloudera platforms</li>
@@ -95,12 +133,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>Programmer Analyst</h3>
-                        <h4>Big Data Engineer - Chennai, India</h4>
-                        <p class="date">October 2020 - January 2022</p>
-                        <ul>
+                        <div class="timeline-date">October 2020 - January 2022</div>
+                        <h3>Programmer Analyst (Big Data Engineer)</h3>
+                        <h4>COGNIZANT Technology Solutions</h4>
+                        <div class="timeline-location">Chennai, India</div>
+                        <ul class="timeline-details">
                             <li>Managed data ingestion tasks across diverse servers</li>
                             <li>Demonstrated proficiency in Java, Python, SQL, and Big Data technologies</li>
                             <li>Led data migration from Ideas Platform to Anap Servers</li>
@@ -117,16 +157,28 @@
                     <h3>Smart Living: IoT and Python in Home Automation</h3>
                     <p>Designed and executed a sophisticated Home Automation system showcasing seamless and intelligent control system for enhanced living experiences.</p>
                     <p class="tech-stack">Python, Django, Google Cloud</p>
+                    <div class="project-links">
+                        <a href="#" class="project-btn" target="_blank">View Project</a>
+                        <a href="#" class="project-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>Women Self Protecting System Using IoT</h3>
                     <p>Devised an IoT wearable for personal safety, employing biometric sensors and GSM-GPS technology to alert authorities during emergencies.</p>
                     <p class="tech-stack">Python, MySQL</p>
+                    <div class="project-links">
+                        <a href="#" class="project-btn" target="_blank">View Project</a>
+                        <a href="#" class="project-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>Blockchain-Based Election Systems</h3>
                     <p>Developed a decentralized voting system using blockchain technology to enhance election security, transparency, and voter confidence.</p>
                     <p class="tech-stack">Solidity, JavaScript, J2EE, HTML</p>
+                    <div class="project-links">
+                        <a href="#" class="project-btn" target="_blank">View Project</a>
+                        <a href="#" class="project-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -136,7 +188,7 @@
             <div class="contact-content">
                 <p>Currently based in Denton, TX</p>
                 <div class="contact-links">
-                    <a href="mailto:lokesh.rmd.pk@gmail.com" class="contact-button">Email Me</a>
+                    <a href="mailto:lokeshadhepalliprasad@gmail.com" class="contact-button">Email Me</a>
                     <a href="https://linkedin.com/in/lokesh-o-aaa96b7" target="_blank" class="contact-button">LinkedIn</a>
                 </div>
             </div>
